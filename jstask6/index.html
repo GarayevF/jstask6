@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap-extendedv1.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+    
+    <section id="Header" class="py-1rem">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-6 text-start">
+                    <a href="index.html">
+                        <h1 class="fs-40px">SHOP.AZ</h1>
+                    </a>
+                </div>    
+                <div  class="col-lg-6 col-6 text-end">
+                    <div class="shop">
+                        <p>Səbətim</p>
+                        <i class="fa-solid fa-cart-shopping fs-20px"></i>
+                        <span id="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Sort">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <input id="sortinp" type="text" placeholder="Sort üçün söz yazın">
+                </div>
+                <div class="col-lg-4">
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="dropdown">
+                        <button onclick="togglecategory()" class="dropbtn">Categories</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="NotFound" class="d-none">
+        <main class="bl_page404">
+            <h1>Məhsul tapılmadı</h1>
+
+            <div class="bl_page404__wrapper">
+              <img src="https://github.com/BlackStar1991/Pictures-for-sharing-/blob/master/404/bigBoom/cloud_warmcasino.png?raw=true" alt="cloud_warmcasino.png">
+              <div class="bl_page404__el1"></div>
+              <div class="bl_page404__el2"></div>
+              <div class="bl_page404__el3"></div>
+              <a class="bl_page404__link" href="index.html">Ana Səhifə</a>
+            </div>
+          </main>
+    </section>
+
+    <section id="Content">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="Toast" class="bg-success w-400px border-10px py-5px text-center">
+        <p class="text-white fw-bold">Məhsul uğurla silindi(check console)</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

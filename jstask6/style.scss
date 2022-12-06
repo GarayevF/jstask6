@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+#NotFound{
+    padding: 1rem 0;
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        
+        font-family: "Open Sans - Semibold", sans-serif;
+        color: #1d3041;
+      
+      h1 {
+        text-align: center;
+        
+        margin-bottom: 25px;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      
+      .bl_page404__wrapper {
+        position: relative;
+        width: 100%;
+        margin: 10px auto 10px;
+        max-width: 440px;
+        min-height: 410px;
+      
+      }
+      .bl_page404__img {
+        width: 100%;
+      }
+      .bl_page404__link {
+        display: block;
+        margin: 1rem auto;
+        width: 260px;
+        height: 64px;
+        box-shadow: 0 5px 0 #9c1007, inset 0 0 18px rgba(253, 60, 0, 0.75);
+        background-color: #f95801;
+        color: #fff;
+        font-family: "Open Sans", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 64px;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 30px;
+        text-align: center;
+      }
+      .bl_page404__link:hover,
+      .bl_page404__link:focus {
+        background-color: #ff7400;
+      }
+      .bl_page404__el1 {
+        position: absolute;
+        top: 108px;
+        left: 102px;
+        opacity: 1;
+        animation: el1Move 800ms linear infinite;
+        width: 84px;
+        height: 106px;
+        background: url("https://github.com/BlackStar1991/Pictures-for-sharing-/blob/master/404/bigBoom/404-1.png?raw=true")
+          50% 50% no-repeat;
+        z-index: 2;
+      }
+      .bl_page404__el2 {
+        position: absolute;
+        top: 92px;
+        left: 136px;
+        opacity: 1;
+        animation: el2Move 800ms linear infinite;
+        width: 184px;
+        height: 106px;
+        background: url("https://github.com/BlackStar1991/Pictures-for-sharing-/blob/master/404/bigBoom/404-2.png?raw=true")
+          50% 50% no-repeat;
+        z-index: 2;
+      }
+      .bl_page404__el3 {
+        position: absolute;
+        top: 108px;
+        left: 180px;
+        opacity: 1;
+        animation: el3Move 800ms linear infinite;
+        width: 284px;
+        height: 106px;
+        background: url("https://github.com/BlackStar1991/Pictures-for-sharing-/blob/master/404/bigBoom/404-3.png?raw=true")
+          50% 50% no-repeat;
+        z-index: 2;
+      }
+      @keyframes el1Move {
+        0% {
+          top: 108px;
+          left: 102px;
+          opacity: 1;
+        }
+        100% {
+          top: -10px;
+          left: 22px;
+          opacity: 0;
+        }
+      }
+      @keyframes el2Move {
+        0% {
+          top: 92px;
+          left: 136px;
+          opacity: 1;
+        }
+        100% {
+          top: -10px;
+          left: 108px;
+          opacity: 0;
+        }
+      }
+      @keyframes el3Move {
+        0% {
+          top: 108px;
+          left: 180px;
+          opacity: 1;
+        }
+        100% {
+          top: 28px;
+          left: 276px;
+          opacity: 0;
+        }
+      }
+      
+}
+
+
+#Header{
+    background-color: #FF0032;
+    .container{
+        .row{
+            .col-lg-6:nth-child(1) {
+                h1{
+                    cursor: pointer;
+                    color: #fff;
+                }
+             }
+            .col-lg-6:nth-child(2) {
+                display: flex;
+                justify-content: end;
+                .shop{
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #fff;
+                    width: 200px;
+                    padding: 1rem 2rem;
+                    border-radius: 10px;
+                    border: 1px solid gray;
+                    cursor: pointer;
+                    
+                    span{
+                        position: absolute;
+                        top: 5px;
+                        right: 20px;
+                        padding: 2px 6px;
+                        background-color: red;
+                        color: #fff;
+                        border-radius: 100%;
+                        font-size: 12px;
+                    }
+                }
+                
+             }
+        }
+    }
+}
+
+#Sort{
+    padding: 2rem 0;
+    .container{
+        .row{
+            .col-lg-4:nth-child(1){
+                input{
+                    padding: 10px 15px;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+            .col-lg-4:nth-child(3){
+                display: flex;
+                justify-content: end;
+                .dropbtn {
+                    background-color: #3498DB;
+                    color: white;
+                    padding: 12px 4rem;
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 10px;
+                }
+                
+                .dropbtn:hover, .dropbtn:focus {
+                    background-color: #2980B9;
+                }
+                
+                .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+                
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f1f1f1;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                }
+                
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+                
+                .dropdown-content a:hover {background-color: #ddd;}
+                
+                .show {display:block;}
+            }
+            
+        }
+    }
+}
+
+#Content{
+    padding: 2rem 0;
+    .row{
+        
+        .card{
+            height: 450px;
+            img{
+                height: 200px;
+                object-fit: contain;
+            }
+            .card-body{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+#Toast{
+    position: fixed;
+    right: -500px;
+    bottom: 20px;
+    transition: .5s;
+}
